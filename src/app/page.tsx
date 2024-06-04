@@ -5,8 +5,12 @@ import Link from "next/link";
 import { Container, Typography, Paper, Box, Grid } from "@mui/material";
 import {Man, logo, Mans, Frame6} from "@/assets/index"
 import Image from "next/image"
-global.window = {};
-
+global.window = {
+  location: {
+    href: ''
+  },
+  // Add other properties and methods as needed
+} as unknown as Window & typeof globalThis;
 
 // import Man from "@/assets/images/Man.png";
 // import Mans from "@/assets/images/Mans.png";
