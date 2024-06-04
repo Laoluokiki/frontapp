@@ -105,10 +105,8 @@ const Homepage: React.FC<HomepageProps> = () => {
     whiteSpace: "nowrap",
   };
 
-  if (typeof window !== "undefined") {
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  }
   
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   // Function to update screen width state on window resize
   const updateScreenWidth = () => {
