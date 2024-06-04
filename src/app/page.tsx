@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Container, Typography, Paper, Box, Grid } from "@mui/material";
 import {Man, logo, Mans, Frame6} from "@/assets/index"
 import Image from "next/image"
+global.window = {};
 
 
 // import Man from "@/assets/images/Man.png";
